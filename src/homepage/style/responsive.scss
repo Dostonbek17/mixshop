@@ -1,0 +1,1524 @@
+@mixin paddingsection {
+    padding: 30px 0 30px;    
+}
+@mixin pageEndBtn{
+    padding:10px 15px;
+} 
+ 
+@media screen and (max-width:1024px) {
+
+    .modal-body{
+        .searchSec{
+            form{
+                position: relative;
+                .searchInput{
+                    width: 410px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: 1px solid #808080;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }   
+                }
+                .searchBtn{
+                    position: absolute;
+                    right: 0;
+                    top:10%;
+                    background-color: transparent !important;
+                    border: none;
+                }
+            }
+        }
+    }
+    nav.navigation{
+        padding: 15px 20px 15px  20px;
+        border: 1px solid #eaeaea;
+        .searchSec{
+            margin: 0;
+        }
+        .responsivemodal{
+            display: none;          
+        }
+     }  
+    div.catigories{
+         display: inline;
+         padding: 0;
+         #responsiveIcon{
+           display:none;
+         }
+         .links{
+            display: flex;
+            padding: 10px 0;
+            flex-wrap:wrap; 
+         }
+         .btn-group{
+             display: flex;
+             margin: 15px 15px 0;
+             .dropdown-toggle{
+                 width: 100%;
+                 display: flex;
+                 justify-content: center;
+                 &::after{
+                     margin-left: 10px;
+                 }
+             }
+             .dropdown-menu.show{
+                 width: 100%;
+             }
+         }
+     }
+    div.home{
+        height: 18rem;
+        background-position: center;
+        .main{
+            .side1{
+                margin: 0;
+                padding: 50px 10px;
+                h3{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .buttons{
+                    .button1{
+                        padding: 10px 10px;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .side2{
+                img{
+                    width: 360px;
+                    height: 288px;
+                    margin-left: 42px;
+                }
+            }
+        }
+    }
+    div.smartwatch{
+        @include paddingsection();
+        .pageTitles{
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .cards{
+            width: 100%;
+            .productCard{
+                text-align: center;
+                .forImg{
+                    width: 100%;
+                  img{
+                    width: 100%;
+                  }   
+                }    
+                .price{
+                    transform: translate(74px, 0);
+                }
+            }
+        }
+        .buttonArea{
+            .exploreBtn{
+                padding: 10px 15px;
+            }
+        }
+    }
+    div.adds{
+        background-position: center;
+        height: 150px;
+        .contents{
+            padding: 30px 30px; 
+            .aboutText{
+                font-size: 25px;
+            }
+            .shopping{
+                 display: flex;
+                 justify-content: center;
+                 a{
+                     padding: 10px 20px;
+                 }                   
+            }
+        }
+    }
+    div.newcollect{
+        @include paddingsection();
+        .cardsArea{
+            .row{
+                .cards{
+                    padding: 0 0;
+                    .card{
+                        margin: 5px!important;
+                        text-align: center;
+                        .card-body{
+                            img{
+                                width: 88% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-12{
+            .card{
+                margin: 10px;
+            }
+            .buttonArea{
+                .exploreButton{
+                        @include pageEndBtn() ;                   
+                }
+            }
+        }      
+    }
+    div.Trending{
+        @include paddingsection();
+        .trendingCards{
+            .col-md-3{
+                .card{
+                    .card-header{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .card-body{
+                        .price{
+                            padding: 5px 15px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.footer{
+        @include paddingsection();
+        .row{
+            align-items: center;
+            .col-md-4{
+                display: flex;
+                justify-content: space-around;
+                .products{
+                    margin: 0 45px;
+                    li{
+                        width: 90%;
+                        a{
+                            width: 90%;
+                        }
+                    }
+                    .SimpleText{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    .modal-body{
+        .searchSec{
+            form{
+                position: relative;
+                .searchInput{
+                    width: 410px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: 1px solid #808080;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }   
+                }
+                .searchBtn{
+                    position: absolute;
+                    right: 0;
+                    top:10%;
+                    background-color: transparent !important;
+                    border: none;
+                }
+            }
+        }
+    }
+    nav.navigation{
+        padding: 15px 20px 15px  20px;
+        border: 1px solid #eaeaea;
+        .searchSec{
+            display: none;
+        }
+        .icons{
+            display: none;
+        }
+        .responsivemodal{
+            display: block;
+            .btn{
+             background-color: transparent !important;
+             color: #000000;   
+             border: none;
+            }            
+        }
+     }  
+    div.catigories{
+         display: inline;
+         padding: 0;
+         #responsiveIcon{
+           display: block;
+           .icons{
+               .bolimlar{
+                   padding: 0 5px 0 5px ;
+                   color: #808080;
+               }
+               
+           }
+         }
+         .links{
+            display: flex;
+            padding: 10px 0;
+            flex-wrap:wrap; 
+         }
+         .btn-group{
+             display: flex;
+             margin: 15px 15px 0;
+             .dropdown-toggle{
+                 width: 100%;
+                 display: flex;
+                 justify-content: center;
+                 &::after{
+                     margin-left: 10px;
+                 }
+             }
+             .dropdown-menu.show{
+                 width: 100%;
+             }
+         }
+     }
+    div.home{
+        height: 18rem;
+        background-position: center;
+        .main{
+            .side1{
+                margin: 0;
+                padding: 50px 10px;
+                h3{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .buttons{
+                    .button1{
+                        padding: 10px 10px;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .side2{
+                img{
+                    width: 340px;
+                    height: 288px;
+                }
+            }
+        }
+    }
+    div.smartwatch{
+        @include paddingsection();
+        .pageTitles{
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .cards{
+            width: 100%;
+            .productCard{
+                text-align: center;
+                .forImg{
+                    width: 100%;
+                  img{
+                    width: 100%;
+                  }   
+                }    
+                .price{
+                    transform: translate(50px, 0);
+                }
+            }
+        }
+        .buttonArea{
+            .exploreBtn{
+                padding: 10px 15px;
+            }
+        }
+    }
+    div.adds{
+        background-position: center;
+        height: 150px;
+        .contents{
+            padding: 30px 30px; 
+            .aboutText{
+                font-size: 25px;
+            }
+            .shopping{
+                 display: flex;
+                 justify-content: center;
+                 a{
+                     padding: 10px 20px;
+                 }                   
+            }
+        }
+    }
+    div.newcollect{
+        @include paddingsection();
+        .cardsArea{
+            .row{
+                .cards{
+                    padding: 0 17px;
+                    .card{
+                        margin: 10px!important;
+                        text-align: center;
+                        .card-body{
+                            img{
+                                width: 70% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-12{
+            .card{
+                margin: 15px;
+            }
+            .buttonArea{
+                .exploreButton{
+                        @include pageEndBtn() ;                   
+                }
+            }
+        }      
+    }
+    div.Trending{
+        @include paddingsection();
+        .trendingCards{
+            .col-md-3{
+                .card{
+                    .card-header{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .card-body{
+                        .price{
+                            padding: 5px 15px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.footer{
+        @include paddingsection();
+        .row{
+            align-items: center;
+            .col-md-4{
+                display: flex;
+                justify-content: space-around;
+                .products{
+                    margin: 0 20px;
+                    li{
+                        width: 90%;
+                        a{
+                            width: 90%;
+                        }
+                    }
+                    .SimpleText{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:501px) {
+
+    .modal-body{
+        .searchSec{
+            form{
+                position: relative;
+                .searchInput{
+                    width: 380px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: 1px solid #808080;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }   
+                }
+                .searchBtn{
+                    position: absolute;
+                    right: 0;
+                    top:10%;
+                    background-color: transparent !important;
+                    border: none;
+                }
+            }
+        }
+    }
+    nav.navigation{
+        padding: 15px 20px 15px  20px;
+        border: 1px solid #eaeaea;
+        .searchSec{
+            display: none;
+        }
+        .icons{
+            display: none;
+        }
+        .responsivemodal{
+            display: block;
+            .btn{
+             background-color: transparent !important;
+             color: #000000;   
+             border: none;
+            }            
+        }
+     }  
+    div.catigories{
+         display: inline;
+         padding: 0;
+         #responsiveIcon{
+           display: block;
+           .icons{
+               .bolimlar{
+                   padding: 0 5px 0 5px ;
+                   color: #808080;
+               }
+               
+           }
+         }
+         .links{
+            display: flex;
+            padding: 10px 0;
+            flex-wrap:wrap; 
+         }
+         .btn-group{
+             display: flex;
+             margin: 15px 15px 0;
+             .dropdown-toggle{
+                 width: 100%;
+                 display: flex;
+                 justify-content: center;
+                 &::after{
+                     margin-left: 10px;
+                 }
+             }
+             .dropdown-menu.show{
+                 width: 100%;
+             }
+         }
+     }
+    div.home{
+        height: 25rem;
+        background-position: center;
+        .main{
+            display: inline;
+            .side1{
+                margin: 0;
+                padding: 60px 10px;
+                h3{
+                    font-size: 30px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .buttons{
+                    .button1{
+                        padding: 15px 15px;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .side2{
+                display: none;
+            }
+        }
+    }
+    div.smartwatch{
+        @include paddingsection();
+        .pageTitles{
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .cards{
+            display: inline-block;
+            .productCard{
+                padding: 10px 105px;
+                text-align: center;
+                img{
+                    width: 85%;
+                }
+                .price{
+                    transform: translate(100px, 0);
+                }
+            }
+        }
+        .buttonArea{
+            .exploreBtn{
+                padding: 10px 15px;
+            }
+        }
+    }
+    div.adds{
+        background-position: center;
+        height: 200px;
+        .contents{
+            display: inline-block;
+            padding: 30px;
+            .aboutText{
+                font-size: 25px;
+                width: 100%;
+                text-align: center;
+            }
+            .shopping{
+                 display: flex;
+                 justify-content: center;
+                 a{
+                     padding: 10px 20px;
+                 }                   
+            }
+        }
+    }
+    div.newcollect{
+        @include paddingsection();
+        .cardsArea{
+            .row{
+                .cards{
+                    .card{
+                        margin: 30px!important;
+                        text-align: center;
+                        .card-body{
+                            img{
+                                width: 65% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-12{
+            .card{
+                margin: 25px;
+            }
+            .buttonArea{
+                .exploreButton{
+                        @include pageEndBtn() ;                   
+                }
+            }
+        }      
+    }
+    div.Trending{
+        @include paddingsection();
+        .trendingCards{
+            .col-md-3{
+                .card{
+                    margin: 30px;
+                    .card-header{
+                        img{
+                            width: 65%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.footer{
+        @include paddingsection();
+        .col-md-4{
+            display: block;
+            .products{
+                margin: 25px 0;
+                li{
+                    width: 90%;
+                    a{
+                        width: 90%;
+                    }
+                }
+                .SimpleText{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:414px) {
+
+    .modal-body{
+        .searchSec{
+            form{
+                position: relative;
+                .searchInput{
+                    width: 325px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: 1px solid #808080;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }   
+                }
+                .searchBtn{
+                    position: absolute;
+                    right: 0;
+                    top:10%;
+                    background-color: transparent !important;
+                    border: none;
+                }
+            }
+        }
+    }
+    nav.navigation{
+        padding: 15px 20px 15px  20px;
+        border: 1px solid #eaeaea;
+        .searchSec{
+            display: none;
+        }
+        .icons{
+            display: none;
+        }
+        .responsivemodal{
+            display: block;
+            .btn{
+             background-color: transparent !important;
+             color: #000000;   
+             border: none;
+            }            
+        }
+     }  
+    div.catigories{
+         display: inline;
+         padding: 0;
+         #responsiveIcon{
+           display: block;
+           .icons{
+               .bolimlar{
+                   padding: 0 5px 0 5px ;
+                   color: #808080;
+               }
+               
+           }
+         }
+         .links{
+            display: flex;
+            padding: 10px 0;
+            flex-wrap:wrap; 
+         }
+         .btn-group{
+             display: flex;
+             margin: 15px 15px 0;
+             .dropdown-toggle{
+                 width: 100%;
+                 display: flex;
+                 justify-content: center;
+                 &::after{
+                     margin-left: 10px;
+                 }
+             }
+             .dropdown-menu.show{
+                 width: 100%;
+             }
+         }
+     }
+    div.home{
+        height: 20rem;
+        background-position: center;
+        .main{
+            display: inline;
+            .side1{
+                margin: 0;
+                padding: 60px 10px;
+                h3{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .buttons{
+                    .button1{
+                        padding: 10px 10px;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .side2{
+                display: none;
+            }
+        }
+    }
+    div.smartwatch{
+        @include paddingsection();
+        .pageTitles{
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .cards{
+            display: inline-block;
+            .productCard{
+                padding: 10px 72px;
+                text-align: center;
+                img{
+                    width: 85%;
+                }
+                .price{
+                    transform: translate(100px, 0);
+                }
+            }
+        }
+        .buttonArea{
+            .exploreBtn{
+                padding: 10px 15px;
+            }
+        }
+    }
+    div.adds{
+        background-position: center;
+        height: 200px;
+        .contents{
+            display: inline-block;
+            padding: 30px;
+            .aboutText{
+                font-size: 25px;
+                width: 100%;
+                text-align: center;
+            }
+            .shopping{
+                 display: flex;
+                 justify-content: center;
+                 a{
+                     padding: 10px 20px;
+                 }                   
+            }
+        }
+    }
+    div.newcollect{
+        @include paddingsection();
+        .cardsArea{
+            .row{
+                .cards{
+                    .card{
+                        margin: 20px!important;
+                        text-align: center;
+                        .card-body{
+                            img{
+                                width: 75% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-12{
+            .card{
+                margin: 20px;
+            }
+            .buttonArea{
+                .exploreButton{
+                        @include pageEndBtn() ;                   
+                }
+            }
+        }      
+    }
+    div.Trending{
+        @include paddingsection();
+        .trendingCards{
+            .col-md-3{
+                .card{
+                    margin: 20px;
+                    .card-header{
+                        img{
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.footer{
+        @include paddingsection();
+        .col-md-4{
+            display: block;
+            .products{
+                margin: 25px 0;
+                li{
+                    width: 90%;
+                    a{
+                        width: 90%;
+                    }
+                }
+                .SimpleText{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    .modal-body{
+        .searchSec{
+            form{
+                position: relative;
+                .searchInput{
+                    width: 275px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: 1px solid #808080;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }   
+                }
+                .searchBtn{
+                    position: absolute;
+                    right: 0;
+                    top:10%;
+                    background-color: transparent !important;
+                    border: none;
+                }
+            }
+        }
+    }
+    nav.navigation{
+        padding: 15px 20px 15px  20px;
+        border: 1px solid #eaeaea;
+        .searchSec{
+            display: none;
+        }
+        .icons{
+            display: none;
+        }
+        .responsivemodal{
+            display: block;
+            .btn{
+             background-color: transparent !important;
+             color: #000000;   
+             border: none;
+            }            
+        }
+     }  
+    div.catigories{
+         display: inline;
+         padding: 0;
+         #responsiveIcon{
+           display: block;
+           .icons{
+               .bolimlar{
+                   padding: 0 5px 0 5px ;
+                   color: #808080;
+               }
+               
+           }
+         }
+         .links{
+            display: flex;
+            padding: 10px 0;
+            flex-wrap:wrap; 
+         }
+         .btn-group{
+             display: flex;
+             margin: 15px 15px 0;
+             .dropdown-toggle{
+                 width: 100%;
+                 display: flex;
+                 justify-content: center;
+                 &::after{
+                     margin-left: 10px;
+                 }
+             }
+             .dropdown-menu.show{
+                 width: 100%;
+             }
+         }
+     }
+    div.home{
+        height: 20rem;
+        background-position: center;
+        .main{
+            display: inline;
+            .side1{
+                margin: 0;
+                padding: 60px 10px;
+                h3{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .buttons{
+                    .button1{
+                        padding: 7px 7px;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .side2{
+                display: none;
+            }
+        }
+    }
+    div.smartwatch{
+        @include paddingsection();
+        .pageTitles{
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .cards{
+            display: inline-block;
+            .productCard{
+                padding: 10px 55px;
+                text-align: center;
+                img{
+                    width: 85%;
+                }
+                .price{
+                    transform: translate(100px, 0);
+                }
+            }
+        }
+        .buttonArea{
+            .exploreBtn{
+                padding: 10px 15px;
+            }
+        }
+    }
+    div.adds{
+        background-position: center;
+        height: 200px;
+        .contents{
+            display: inline-block;
+            padding: 30px;
+            .aboutText{
+                font-size: 25px;
+                width: 100%;
+                text-align: center;
+            }
+            .shopping{
+                 display: flex;
+                 justify-content: center;
+                 a{
+                     padding: 10px 20px;
+                 }                   
+            }
+        }
+    }
+    div.newcollect{
+        @include paddingsection();
+        .cardsArea{
+            .row{
+                .cards{
+                    .card{
+                        margin: 20px!important;
+                        text-align: center;
+                        .card-body{
+                            img{
+                                width: 75% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-12{
+            .card{
+                margin: 20px;
+            }
+            .buttonArea{
+                .exploreButton{
+                        @include pageEndBtn() ;                   
+                }
+            }
+        }      
+    }
+    div.Trending{
+        @include paddingsection();
+        .trendingCards{
+            .col-md-3{
+                .card{
+                    margin: 20px;
+                    .card-header{
+                        img{
+                            width: 75%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.footer{
+        @include paddingsection();
+        .col-md-4{
+            display: block;
+            .products{
+                margin: 25px 0;
+                li{
+                    width: 90%;
+                    a{
+                        width: 90%;
+                    }
+                }
+                .SimpleText{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:370px) {
+
+    .modal-body{
+        .searchSec{
+            form{
+                position: relative;
+                .searchInput{
+                    width: 275px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: 1px solid #808080;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }   
+                }
+                .searchBtn{
+                    position: absolute;
+                    right: 0;
+                    top:10%;
+                    background-color: transparent !important;
+                    border: none;
+                }
+            }
+        }
+    }
+    nav.navigation{
+        padding: 15px 20px 15px  20px;
+        border: 1px solid #eaeaea;
+        .searchSec{
+            display: none;
+        }
+        .icons{
+            display: none;
+        }
+        .responsivemodal{
+            display: block;
+            .btn{
+             background-color: transparent !important;
+             color: #000000;   
+             border: none;
+            }            
+        }
+     }  
+    div.catigories{
+         display: inline;
+         padding: 0;
+         #responsiveIcon{
+           display: block;
+           .icons{
+               .bolimlar{
+                   padding: 0 5px 0 5px ;
+                   color: #808080;
+               }
+               
+           }
+         }
+         .links{
+            display: flex;
+            padding: 10px 0;
+            flex-wrap:wrap; 
+         }
+         .btn-group{
+             display: flex;
+             margin: 15px 15px 0;
+             .dropdown-toggle{
+                 width: 100%;
+                 display: flex;
+                 justify-content: center;
+                 &::after{
+                     margin-left: 10px;
+                 }
+             }
+             .dropdown-menu.show{
+                 width: 100%;
+             }
+         }
+     }
+    div.home{
+        height: 20rem;
+        background-position: center;
+        .main{
+            display: inline;
+            .side1{
+                margin: 0;
+                padding: 60px 10px;
+                h3{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .buttons{
+                    .button1{
+                        padding: 7px 7px;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .side2{
+                display: none;
+            }
+        }
+    }
+    div.smartwatch{
+        @include paddingsection();
+        .pageTitles{
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .cards{
+            display: inline-block;
+            .productCard{
+                padding: 10px 45px;
+                text-align: center;
+                img{
+                    width: 85%;
+                }
+                .price{
+                    transform: translate(100px, 0);
+                }
+            }
+        }
+        .buttonArea{
+            .exploreBtn{
+                padding: 10px 15px;
+            }
+        }
+    }
+    div.adds{
+        background-position: center;
+        height: 230px;
+        .contents{
+            display: inline-block;
+            padding: 30px;
+            .aboutText{
+                font-size: 25px;
+                width: 100%;
+                text-align: center;
+            }
+            .shopping{
+                 display: flex;
+                 justify-content: center;
+                 a{
+                     padding: 10px 20px;
+                 }                   
+            }
+        }
+    }
+    div.newcollect{
+        @include paddingsection();
+        .cardsArea{
+            .row{
+                .cards{
+                    .card{
+                        margin: 10px!important;
+                        text-align: center;
+                        .card-body{
+                            img{
+                                width: 90% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-12{
+            .card{
+                margin: 12px;
+            }
+            .buttonArea{
+                .exploreButton{
+                        @include pageEndBtn() ;                   
+                }
+            }
+        }      
+    }
+    div.Trending{
+        @include paddingsection();
+        .trendingCards{
+            .col-md-3{
+                .card{
+                    margin: 10px;
+                    .card-header{
+                        img{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.footer{
+        @include paddingsection();
+        .col-md-4{
+            display: block;
+            .products{
+                margin: 25px 0;
+                li{
+                    width: 90%;
+                    a{
+                        width: 90%;
+                    }
+                }
+                .SimpleText{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:330px) {
+
+    .modal-body{
+        .searchSec{
+            form{
+                position: relative;
+                .searchInput{
+                    width: 230px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    border: 1px solid #808080;
+                    &:focus{
+                        outline: none;
+                        box-shadow: none;
+                    }   
+                }
+                .searchBtn{
+                    position: absolute;
+                    right: 0;
+                    top:10%;
+                    background-color: transparent !important;
+                    border: none;
+                }
+            }
+        }
+    }
+     nav.navigation{
+        padding: 15px 20px 15px  20px;
+        border: 1px solid #eaeaea;
+        .searchSec{
+            display: none;
+        }
+        .icons{
+            display: none;
+        }
+        .responsivemodal{
+            display: block;
+            .btn{
+             background-color: transparent !important;
+             color: #000000;   
+             border: none;
+            }            
+        }
+     }  
+     div.catigories{
+         display: inline;
+         padding: 0;
+         #responsiveIcon{
+           display: block;
+           .icons{
+               .bolimlar{
+                   padding: 0 5px 0 5px ;
+                   color: #808080;
+               }
+               
+           }
+         }
+         .links{
+            display: flex;
+            padding: 10px 0;
+            flex-wrap:wrap; 
+         }
+         .btn-group{
+             display: flex;
+             margin: 15px 15px 0;
+             .dropdown-toggle{
+                 width: 100%;
+                 display: flex;
+                 justify-content: center;
+                 &::after{
+                     margin-left: 10px;
+                 }
+             }
+             .dropdown-menu.show{
+                 width: 100%;
+             }
+         }
+     }
+    div.home{
+        height: 20rem;
+        background-position: center;
+        .main{
+            display: inline;
+            .side1{
+                margin: 0;
+                padding: 60px 10px;
+                h3{
+                    font-size: 25px;
+                }
+                p{
+                    font-size: 15px;
+                }
+                .buttons{
+                    .button1{
+                        padding: 7px 7px;
+                        font-size: 15px;
+                    }
+                }
+            }
+            .side2{
+                display: none;
+            }
+        }
+    }
+    div.smartwatch{
+        @include paddingsection();
+        .pageTitles{
+            h4{
+                font-size: 20px;
+            }
+            p{
+                font-size: 15px;
+            }
+        }
+        .cards{
+            display: inline-block;
+            .productCard{
+                padding: 10px 25px;
+                text-align: center;
+                img{
+                    width: 85%;
+                }
+                .price{
+                    transform: translate(100px, 0);
+                }
+            }
+        }
+        .buttonArea{
+            .exploreBtn{
+                padding: 10px 15px;
+            }
+        }
+    }
+    div.adds{
+        background-position: center;
+        height: 230px;
+        .contents{
+            display: inline-block;
+            padding: 30px;
+            .aboutText{
+                font-size: 25px;
+                width: 100%;
+                text-align: center;
+            }
+            .shopping{
+                 display: flex;
+                 justify-content: center;
+                 a{
+                     padding: 10px 20px;
+                 }                   
+            }
+        }
+    }
+    div.newcollect{
+        @include paddingsection();
+        .cardsArea{
+            .row{
+                .cards{
+                    .card{
+                        margin: 10px!important;
+                        text-align: center;
+                        .card-body{
+                            img{
+                                width: 90% !important;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .col-md-12{
+            .card{
+                margin: 12px;
+            }
+            .buttonArea{
+                .exploreButton{
+                        @include pageEndBtn() ;                   
+                }
+            }
+        }      
+    }
+    div.Trending{
+        @include paddingsection();
+        .trendingCards{
+            .col-md-3{
+                .card{
+                    margin: 10px;
+                    .card-header{
+                        img{
+                            width: 90%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    div.footer{
+        @include paddingsection();
+        .col-md-4{
+            display: block;
+            .products{
+                margin: 25px 0;
+                li{
+                    width: 90%;
+                    a{
+                        width: 90%;
+                    }
+                }
+                .SimpleText{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

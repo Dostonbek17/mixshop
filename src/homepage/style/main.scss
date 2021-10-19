@@ -1,0 +1,515 @@
+
+$allcatigoriesBtnBack:#f8f8f8;
+$catigorieslink:#403F3f;
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+}
+//nav uchun scss
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 75px 30px 75px;
+    .responsivemodal{
+        display: none;
+   }
+    .navLogo{
+        text-decoration: none;
+        color: #707070;
+        font-weight: 700;
+        font-size: 15px;
+    img{
+        width: 50px;
+        height: 50px;
+        &:nth-child(2){
+            width: 80px;
+            height: 50px;
+        }
+    }
+}
+    .searchSec{
+        margin-right: 115px;
+        form{
+            position: relative;
+            .searchInput{
+                width: 560px;
+                padding: 5px;
+                border-radius: 5px;
+                border: 1px solid #808080;
+                &:focus{
+                    outline: none;
+                    box-shadow: none;
+                }   
+            }
+            .searchBtn{
+                position: absolute;
+                right: 3%;
+                top:10%;
+                background-color: transparent !important;
+                border: none;
+            }
+        }
+    }
+    .icons{
+        .bolimlar{
+            margin: 15px;
+            color:#000;
+        }
+    }
+}
+//catigoriya uchun scss
+.catigories{
+    padding: 20px 75px 10px 75px;
+    border-top: 1.3px solid #DFDFDF;
+    display: flex;
+    justify-content: space-between;
+    #responsiveIcon{
+    display: none;
+    }
+    .btn-group{
+        display: inline-block;
+        button{
+            display: flex;
+            align-items: center;
+            background-color: $allcatigoriesBtnBack;
+            color: #000000;
+            border: none;
+            .menuIcon{
+                margin-right: 10px;
+            }
+            &::after{
+                margin-left:50px;
+            }
+        }
+    }
+    .links{
+        display: flex;
+        .link_item{
+            list-style-type: none;
+            margin: 0 25px;
+            .link{
+                text-decoration: none;
+                color:$catigorieslink;
+            }
+            .active{
+                color: #FF5D18;
+            }
+        }
+    }
+}
+//home uchun scss
+.home{
+    background:url("../home\ bg.jpg") no-repeat;
+    background-size: cover;
+    height:31rem;
+    .main{
+        display:flex;
+        .side1{
+            margin: 115px 75px auto;
+            h3{
+                font-size: 50px;
+                color:#ffffff; 
+                font-family: 'Open Sans', sans-serif;
+            }
+            p{
+                font-family: 'Open Sans', sans-serif;
+                color: #ffffff;
+                margin-bottom: 60px;
+                margin-top: 20px;
+            }
+            .buttons{
+                a{
+                    background-color: #FF4F04;
+                    padding: 10px 20px;
+                    color: #ffffff;
+                    text-decoration: none;
+                    border-radius: 5px;
+                    &:nth-child(2){
+                        background-color: #5a5a5a54;
+                        margin-left: 10px;
+                    }
+                    scg{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        .side2{
+            img{
+                width:35rem;
+                height: 31rem;
+            }
+        }
+    }
+}
+//smart watchs uchun scss
+.smartwatch{
+    padding: 50px 0 50px;
+    background-color: #f8f8f8;
+    .titles{
+        text-align: center;
+        p{
+            color: #302f2f;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+        h4{
+            color:#111111;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            font-weight: 600;
+        }
+    }
+    .cards{
+        display: flex;
+        justify-content: center;
+        
+        .productCard{
+            padding:30px 15px;
+            
+            .forImg{
+            width: 270px;
+            height: 270px;
+            overflow: hidden;
+            border-radius:10px ;
+            img{
+                border-radius: 10px;
+                cursor: pointer;
+                transition: 0.5s ease;
+                &:hover{
+                    transform: scale(1.2);
+                }
+              }
+             }
+            p{
+                text-align: center;
+                margin-top: 15px;
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 700;
+            }
+            .price{
+                background-color: #f4e4de;
+                width: 60px;
+                height: 40px;
+                border-radius: 50px;
+                padding: 8px 13px;
+                transform: translate(100px, 0);
+                color: #ff4f04;
+                font-weight: 500;
+            }
+        }
+    }
+    .buttonArea{
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        .exploreBtn{
+            border: 1px solid #707070;
+            padding: 20px 30px;
+            color: #302f2f;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.8s;
+            &:hover{
+                background-color: #707070;
+                color:#ffffff;
+            }
+        }
+    }
+}
+//Adds reklama uchun scss
+.adds{
+    background: url("../sale_bg.jpg") no-repeat;
+    background-size: cover;
+    height: 15rem;
+    .contents{
+        display: flex;
+        justify-content: space-between;
+        padding: 70px 50px 0 50px;
+        align-items: center;
+        .aboutText{
+            color:#ffffff;
+            font-weight: 700;
+            font-size: 40px;
+            width: 45%;
+            font-family: 'Roboto', sans-serif;
+        }
+        .shopping{
+          a{
+            border: 1px solid #ffffff;
+            padding: 20px 65px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 500;
+            color: #ffffff;
+            transition: 0.8s;
+            &:hover{
+                        background-color: #707070;
+                        color: #ffffff;
+                    }
+        }
+        }
+    }
+}
+//new collect uchun
+.newcollect{
+    .container{
+        .row{
+            .pageTitles{
+                text-align: center;
+                padding: 50px 0 20px;
+                h4{
+                    margin: 0;
+                    color: #111111;
+                    font-family: 'Roboto', sans-serif;
+                    font-weight: 600;
+                }
+                p{
+                    color: #302f2f;
+                    text-transform: uppercase;
+                    font-family: 'Roboto', sans-serif;
+                    margin: 0;
+                }
+            }
+            .cardsArea{ //col-lg-6 col-md-12
+                .row{
+                    .cards{     
+                        .card{
+                            background-color: #f5f5f5;
+                            border: none;
+                            border-radius: 10px;
+                            margin: 10px;
+                            cursor: pointer;
+                            overflow: hidden;
+                            .card-body{
+                                padding: 0;
+                                  img{
+                                      width: 100%;
+                                      transition: 0.5s ease;
+                                      &:hover{
+                                        transform: scale(1.2);
+                                   }
+                                  }
+                            }
+                            .card-footer{
+                                background-color: transparent;
+                                border-top: none;
+                                .texts{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: baseline;
+                                    p{
+                                        font-weight: 600;
+                                        font-family: 'Roboto', snas-serof;
+                                    }
+                                    span{
+                                        background-color: #ffffff;
+                                        padding: 5px 10px;
+                                        border-radius: 20px;
+                                        font-weight: 700;
+                                        color: #ff4f04;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                  }
+                }
+            .col-lg-6{ //ikk inchi col-lg-6 col-md-12
+                       .card{
+                           background-color: #f5f5f5;
+                           border: none;
+                           border-radius: 10px;
+                           .card-body{
+                               .productPrice{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    span{
+                                        background-color: #000000;
+                                        padding: 5px 15px;
+                                        color: #ffffff;
+                                        font-weight: 600;
+                                        border-radius: 20px;
+                                        font-family: 'Roboto', sans-serif;
+                                        &:nth-child(2){//ikkinchi span tegi
+                                            background-color: #ffffff;
+                                            padding: 5px 10px;
+                                            border-radius: 20px;
+                                            font-weight: 700;
+                                            color: #ff4f04;
+                                        }
+                                    } 
+                                 }
+                                .forImg{
+                                     overflow: hidden;
+                                     cursor: pointer;
+                                      img{
+                                         width: 100%; 
+                                          transition: 0.5s ease;
+                                          &:hover{
+                                           transform: scale(1.2);
+                                             }
+                                        } 
+                                     }  
+                                }
+                           .leftCardFoot{
+                               padding: 0 30px;
+                               background-color: transparent;
+                               border-top: none;
+                           }
+                           h4{
+                               font-weight: 600;
+                               font-family: 'Roboto', sans-serif;
+                           }
+                           p{
+                               color: #7a7a7a;
+                           }
+                       }
+                }
+            .buttonArea{
+                padding: 50px 0 50px;
+                .exploreButton{
+                    border: 1px solid #707070;
+                    padding: 20px 30px;
+                    border-radius: 5px;
+                    text-decoration: none;
+                    font-weight: 500;
+                    transition: 0.8s;
+                    color: #302f2f;
+                    &:hover{
+                        background-color: #707070;
+                        color: #ffffff;
+                    }
+                }
+            }
+        }
+    }
+}
+//Trending uchun scss
+.Trending{
+    padding: 50px 0 50px;
+    .PageTitles{
+        padding: 30px 0 30px;
+        text-align: center;
+        p{
+            color: #302f2f;
+            text-transform: uppercase;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+        }
+        h4{
+            color:#111111;
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            font-weight: 600;
+        }
+    }
+    .trendingCards{
+        .row{
+            .col-md-3{
+                margin: 0 0 25px;
+                .card{
+                    border: none;
+                    cursor: pointer;
+                    .card-header{
+                        text-align: center;
+                        overflow: hidden;
+                        border-bottom: none;
+                        border-radius: 10px;
+                        img{
+                            width: 100%;
+                            transition: 0.5s ease;
+                            &:hover{
+                                 transform: scale(1.2);
+                            }
+                        }
+                    }
+                    .card-body{
+                        padding: 10px;
+                        .infoTitle{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .name{
+                                margin: 0;
+                                font-weight: 700;
+                                font-family: 'Roboto',sans-serif;
+                            }
+                            .price{
+                                background-color: #fff0e9;
+                                color: #FF4F04;
+                                padding: 7px 20px;
+                                border-radius: 50px;
+                                font-family: 'Roboto', sans-serif;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+//Foooter uchun scss
+
+.footer{
+    padding: 70px 0 70px;
+    .col-md-6{
+        .brand{
+            img{
+                width: 50px;
+                height: 50px;
+                &:nth-child(2){
+                    width: 80px;
+                    height: 50px;
+                }
+            }
+            .brandText{
+                width: 75%;
+                color:#302f2f;
+                font-family: 'Roboto', sans-serif;
+            }
+        }
+    }
+    .col-md-4{
+        display: flex;
+        .products{
+            margin:  0 40px;
+            padding: 0;
+            .them{
+                padding-bottom: 5px;
+                font-family: 'Roboto', sans-serif;
+                margin: 0;
+                font-weight: 700;
+                font-size: 17px;
+            }
+            .SimpleText{
+                width: 170%;
+            }
+            li{
+                list-style-type: none;
+                font-size: 15px;
+                width: 130%;
+                margin: 15px 0;
+                font-family: 'Roboto', sans-serif;
+                &:hover{
+                    border: 1px solid lightblue;
+                }
+                a{
+                    color:#302f2f;
+                    text-decoration: none;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+}
